@@ -2,15 +2,7 @@
 import React from 'react';
 import Section from './Section';
 
-interface EventDetailsProps {
-    receptionTime: string;
-    receptionVenue: string;
-    receptionAddress: string;
-    dressCode: string;
-    dressCodeDescription: string;
-}
-
-const DetailItem: React.FC<{iconClass: string; title: string; children: React.ReactNode}> = ({ iconClass, title, children }) => (
+const DetailItem = ({ iconClass, title, children }) => (
     <div className="flex-1 min-w-[280px] md:min-w-0 md:basis-1/3 p-6 text-center">
         <i className={`${iconClass} text-4xl text-brand-brown mb-3 inline-block`}></i>
         <h3 className="font-heading text-2xl text-brand-brown mb-2">{title}</h3>
@@ -18,7 +10,7 @@ const DetailItem: React.FC<{iconClass: string; title: string; children: React.Re
     </div>
 );
 
-const EventDetails: React.FC<EventDetailsProps> = ({ 
+const EventDetails = ({ 
     receptionTime, receptionVenue, receptionAddress, 
     dressCode, dressCodeDescription 
 }) => {

@@ -2,11 +2,7 @@
 import React from 'react';
 import Section from './Section';
 
-interface GalleryProps {
-    images: string[];
-}
-
-const Gallery: React.FC<GalleryProps> = ({ images }) => {
+const Gallery = ({ images }) => {
     return (
         <Section id="galeria" title="Galería">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

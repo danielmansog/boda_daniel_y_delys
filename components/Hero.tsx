@@ -2,15 +2,7 @@
 import React from 'react';
 import Countdown from './Countdown';
 
-interface HeroProps {
-    brideName: string;
-    groomName: string;
-    weddingDateString: string;
-    weddingTargetDate: string;
-    heroImageUrl: string;
-}
-
-const Hero: React.FC<HeroProps> = ({ brideName, groomName, weddingDateString, weddingTargetDate, heroImageUrl }) => {
+const Hero = ({ brideName, groomName, weddingDateString, weddingTargetDate, heroImageUrl }) => {
     return (
         <header 
             className="relative h-screen flex flex-col items-center justify-center text-white text-center bg-cover bg-center"

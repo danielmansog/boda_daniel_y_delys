@@ -2,12 +2,7 @@
 import React from 'react';
 import Section from './Section';
 
-interface RSVPProps {
-    deadline: string;
-    formUrl: string;
-}
-
-const RSVP: React.FC<RSVPProps> = ({ deadline, formUrl }) => {
+const RSVP = ({ deadline, formUrl }) => {
     return (
         <Section id="rsvp" title="Confirmar Asistencia" className="text-center">
             <p className="text-lg md:text-xl text-gray-700 mb-6 max-w-xl mx-auto leading-relaxed">

@@ -25,7 +25,7 @@ import {
     CURRENT_YEAR
 } from './constants';
 
-const App: React.FC = () => {
+const App = () => {
     return (
         <>
             <Hero
